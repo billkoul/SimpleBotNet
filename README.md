@@ -6,5 +6,9 @@ Simple Botmaster + bot implementation written in Python
 python botmaster.py<br>
 python bot.py
 
-<b>Prerequisites </b>
-PIL
+<b>Prerequisites </b><br>
+scapy
+socket
+Tkinter
+ttk
+tkMessageBox

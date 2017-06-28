@@ -2,7 +2,7 @@
 
 Simple Botmaster + bot implementation written in Python
 
-Usage:
+<b>Usage:</b><br>
 python botmaster.py<br>
 python bot.py
 

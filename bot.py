@@ -11,6 +11,7 @@ def listen():
 	msg = botnet.recv(35).decode()
 	data = msg.split(' ')
 	victimIp = data[0]
+	print victimIp
 	victimPort = data[1]
 	attack = data[2]
 	print(victimIp)

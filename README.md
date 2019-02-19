@@ -2,11 +2,11 @@
 
 Simple Botmaster + bot implementation written in Python
 
-<b>Usage:</b><hr>
+<hr><b>Usage:</b><hr>
 python botmaster.py<br>
 python bot.py
 
-<b>Prerequisites </b><hr>
+<hr><b>Prerequisites </b><hr>
 scapy<br>
 socket<br>
 Tkinter<br>

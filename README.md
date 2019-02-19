@@ -12,3 +12,5 @@ socket
 Tkinter
 ttk
 tkMessageBox
+
+![alt text](https://github.com/billkoul/SIRTOS/blob/master/botmaster.png)

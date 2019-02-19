@@ -13,4 +13,4 @@ Tkinter
 ttk
 tkMessageBox
 
-![alt text](https://github.com/billkoul/SIRTOS/blob/master/botmaster.png)
+![alt text](https://github.com/billkoul/SimpleBotNet/blob/master/botmaster.png)

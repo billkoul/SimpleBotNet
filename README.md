@@ -7,11 +7,11 @@ python botmaster.py<br>
 python bot.py
 
 <b>Prerequisites </b><br>
-scapy
-socket
-Tkinter
-ttk
-tkMessageBox
+scapy<br>
+socket<br>
+Tkinter<br>
+ttk<br>
+tkMessageBox<br>
 
 
 
